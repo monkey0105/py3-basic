@@ -15,13 +15,6 @@ RUN ./configure && \
     rm /usr/bin/python && \
     ln -s /usr/local/bin/python3 /usr/bin/python && \
     ln -s /usr/local/bin/pip3 /usr/bin/pip  
-WORKDIR /opt/
-RUN git clone git://github.com/laurenz/oracle_fdw.git
-WORKDIR /opt/oracle_fdw/
-RUN make && \
-    make install && \
-    cp oracle_fdw.so /usr/lib/postgresql/9.3/lib/
-WORKDIR /
 
 # Install neccesary part of oracle client for cx_Oracle
 RUN unzip /opt/instantclient-basic-linux.x64-11.2.0.4.0.zip -d /opt/ && \
@@ -32,6 +25,14 @@ RUN unzip /opt/instantclient-basic-linux.x64-11.2.0.4.0.zip -d /opt/ && \
     echo "export ORACLE_HOME=/opt/instantclient_11_2" > /etc/profile.d/oracle.sh
 ENV ORACLE_HOME=/opt/instantclient_11_2 \
 LD_LIBRARY_PATH=/opt/instantclient_11_2:$LD_LIBRARY_PATH
+
+WORKDIR /opt/
+RUN git clone git://github.com/laurenz/oracle_fdw.git
+WORKDIR /opt/oracle_fdw/
+RUN make && \
+    make install && \
+    cp oracle_fdw.so /usr/lib/postgresql/9.3/lib/
+WORKDIR /
 
 # Install python packages from the requirement list 
 RUN ldconfig && \
