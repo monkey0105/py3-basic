@@ -81,7 +81,6 @@ Flask-RESTful==0.3.5
 Flask-Script==2.0.5
 Flask-SQLAlchemy==2.1
 Flask-WTF==0.12
-ghp-import==0.4.1
 graphviz==0.5.1
 gunicorn==19.6.0
 jupyter-contrib-core==0.3.0
