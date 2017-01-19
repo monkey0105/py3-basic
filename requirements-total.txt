@@ -86,7 +86,6 @@ gunicorn==19.6.0
 Mako==1.0.4
 Markdown==2.6.6
 mpmath==0.19
-nb-mermaid==0.1.0
 networkx==1.11
 nxpd==0.2.0
 pandoc==1.0.0b2
