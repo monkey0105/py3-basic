@@ -90,7 +90,6 @@ jupyter-pip==0.3
 Mako==1.0.4
 Markdown==2.6.6
 mpmath==0.19
-multicorn===-VERSION-
 nb-mermaid==0.1.0
 networkx==1.11
 nxpd==0.2.0
