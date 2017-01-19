@@ -1,10 +1,10 @@
+ipython==5.1.0
 click==6.6
 cx-Oracle==5.2.1
 decorator==4.0.10
 entrypoints==0.2.2
 Flask==0.11.1
 ipykernel==4.5.2
-ipython==5.1.0
 ipython-genutils==0.1.0
 ipywidgets==5.2.2
 itsdangerous==0.24
@@ -83,10 +83,6 @@ Flask-SQLAlchemy==2.1
 Flask-WTF==0.12
 graphviz==0.5.1
 gunicorn==19.6.0
-jupyter-contrib-core==0.3.0
-jupyter-contrib-nbextensions==0.1.0
-jupyter-nbextensions-configurator==0.2.1
-jupyter-pip==0.3
 Mako==1.0.4
 Markdown==2.6.6
 mpmath==0.19
