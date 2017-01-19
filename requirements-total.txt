@@ -92,7 +92,6 @@ pandoc==1.0.0b2
 patsy==0.4.1
 pelican==3.6.3
 Pillow==3.3.0
-pkg-resources
 ply==3.9
 psutil==4.3.0
 PyDispatcher==2.0.5
