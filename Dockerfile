@@ -35,6 +35,6 @@ RUN make && \
 WORKDIR /
 
 # Install python packages from the requirement list 
-RUN ldconfig && \
+RUN ldconfig 
     pip install -r /opt/requirements-total.txt && \
     rm /opt/requirements-total.txt
