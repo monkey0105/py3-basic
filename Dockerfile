@@ -36,5 +36,6 @@ WORKDIR /
 
 # Install python packages from the requirement list 
 RUN ldconfig && \
+    pip install --upgrade pip && \
     pip install -r /opt/requirements-total.txt && \
     rm /opt/requirements-total.txt
